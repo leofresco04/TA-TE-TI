@@ -2,8 +2,10 @@ import { useState } from "react"
 import Square from "./Components/Square"
 import "./index.css"
 import { Button } from "@mui/material"
+
 import ResetButton from "./Components/ResetButton"
 import Winner from "./Components/Winner"
+import confetti from "canvas-confetti"
 //declaramos los elementos que van a tener los turnos 
 const TURNS = {
   X: "x",
@@ -75,7 +77,7 @@ function App() {
     )//verificamos si es null o si devuelve un ganador en check
     {
       setWinner(newWinner) //aqui winner absorbe el valor de newWinner que viene de chec
-
+      confetti()
 
     }   //check si terminó el juego
 else if(checkEndGame(newBoard)){

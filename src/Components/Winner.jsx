@@ -1,4 +1,5 @@
  import Square from "./Square"
+ import ResetButton from "./ResetButton"
  const Winner =({winner, resetGame })=>{
         if (winner === null) return null
         return (
