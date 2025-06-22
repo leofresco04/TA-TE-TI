@@ -3,7 +3,8 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
   color-scheme: light dark;
   color: black;
   background-color: skyblue;
@@ -79,7 +80,9 @@ body {
   pointer-events: none;
   border-color: transparent;
 }
-
+ .square:hover {
+background: #09f;
+}
 .square.is-selected {
   color: black;
   background: #09f;
