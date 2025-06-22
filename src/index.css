@@ -44,7 +44,7 @@ body {
 .board button {
   padding: 8px 12px;
   margin: 25px;
-  background: transparent;
+  background: black;
   border:black;
   width: 100px;
   border-radius: 5px;
@@ -55,7 +55,7 @@ body {
 
 .board button:hover {
   background: black;
-  color: #222;
+  color: gold;
 }
 
 .board .game {
@@ -100,12 +100,13 @@ background: #09f;
 }
 
 .winner .text {
-  background: #111;
+  background:skyblue;
   height: 300px;
   width: 320px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
   display: flex;
+  color: beige;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -118,6 +119,9 @@ background: #09f;
   border-radius: 10px;
   display: flex;
   gap: 15px;
+  text-align: center;
+  border: solid 1px white;
+  background-color: black;
 }
 
 .square {
