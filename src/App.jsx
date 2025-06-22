@@ -3,6 +3,7 @@ import Square from "./Components/Square"
 import "./index.css"
 import { Button } from "@mui/material"
 import ResetButton from "./Components/ResetButton"
+import Winner from "./Components/Winner"
 //declaramos los elementos que van a tener los turnos 
 const TURNS = {
   X: "x",
@@ -116,29 +117,11 @@ const resetGame=()=>{
         
       </section>
 
-      {
-        winner !== null && (
-          <section className="winner">
-            <div className="text">
-              <h2>
-                {
-                  winner === false ? "TABLAS" : "GANÓ " 
-                }
-              </h2>
-              <header className="win">
-                {
-                  winner && <Square>{winner}</Square>
-                }
-              </header>
-              <footer>
-               <ResetButton resetGame={resetGame}/>
-              </footer>
-            </div>
+     <Winner winner={winner} resetGame={resetGame}/>
+            
 
-          </section>
-
-        )
-      }
+        
+    
 
     </main>
   )
